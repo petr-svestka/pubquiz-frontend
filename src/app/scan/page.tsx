@@ -113,7 +113,7 @@ export default function Scan() {
             const y = Math.min(...corners.map((c: any) => c.y));
             ctx.fillStyle = "blue";
             ctx.font = "50px Arial";
-            ctx.fillText(answer + " " + marker.id.ToString(), x, y);
+            ctx.fillText(answer + " -> " + marker.id.toString(), x, y);
           }
         });
 
