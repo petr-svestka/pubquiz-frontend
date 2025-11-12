@@ -46,8 +46,6 @@
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
-    "js-aruco": "github:damianofalcioni/js-aruco2",
-    "js-aruco2": "^2.0.0",
     "lucide-react": "^0.545.0",
     "next": "15.5.5",
     "next-themes": "^0.4.6",
