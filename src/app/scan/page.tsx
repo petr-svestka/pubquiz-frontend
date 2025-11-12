@@ -88,7 +88,7 @@ export default function Scan() {
 
         markers.forEach((marker: any) => {
 
-          if (allowedIds.includes(marker.id)) {
+          if (true || allowedIds.includes(marker.id)) {
 
             const rotation = getMarkerRotation(marker) / 90 + 2;
             const answer = ['A', 'B', 'C', 'D', 'A', 'B', 'C', 'D', 'A', 'B', 'C', 'D'][Math.round(rotation)];
@@ -113,7 +113,7 @@ export default function Scan() {
             const y = Math.min(...corners.map((c: any) => c.y));
             ctx.fillStyle = "blue";
             ctx.font = "50px Arial";
-            ctx.fillText(answer, x, y);
+            ctx.fillText(answer + " " + marker.id.ToString(), x, y);
           }
         });
 
